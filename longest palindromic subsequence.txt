@@ -1,0 +1,27 @@
+//use the upper triangle, diganols with all 1, lower diagnols with all 0
+//each element use left,down,left-down
+//can upgrade diagnol by diagnol, also can line by line bottomu up
+for (int i = n; i >= 1; i--)
+            for (int j = i; j <= n; j++) {
+                if (s[i] == s[j]) {
+                    if (i == j) {
+                        dp[i][j].value = 1;
+                        dp[i][j].str = s[i];
+                    }
+                    else {
+                        dp[i][j].value = dp[i + 1][j - 1].value + 2;
+                        dp[i][j].str = s[i] + dp[i + 1][j - 1].str + s[j];
+                    }
+                }
+                else {
+                    if (dp[i + 1][j] > dp[i][j - 1]) {
+                        dp[i][j].value = dp[i + 1][j].value;
+                        dp[i][j].str = dp[i + 1][j].str;
+                    }
+                    else {
+                        dp[i][j].value = dp[i][j - 1].value;
+                        dp[i][j].str = dp[i][j - 1].str;
+                    }
+                }
+            }
+        cout << dp[1][n].str << endl;

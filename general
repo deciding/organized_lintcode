@@ -1,0 +1,19 @@
+java
+C++
+C
+int to string:
+	Integer.toString(i);
+	std:to_string(i);
+	itoa(i);
+string to int:
+	Integer.parseInt(s);
+	std::stoi(str);
+	atoi(s);
+int to char:
+	Character.forDigit(i, 10);
+	'0'+i;
+char to int:
+	Character.getNumericValue(c);
+	c-'0';
+
+Java arr.length

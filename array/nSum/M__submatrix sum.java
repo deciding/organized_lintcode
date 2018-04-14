@@ -1,4 +1,5 @@
 import java.util.*;
+//sum is 0
 //2d->3d, horizontally O(N), vertically O(N^2) cases
 public class Solution {
     /**

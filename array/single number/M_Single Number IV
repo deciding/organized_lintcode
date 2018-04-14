@@ -1,0 +1,24 @@
+public class Solution {
+    /**
+     * @param nums: The number array
+     * @return: Return the single number
+     */
+    public int getSingleNumber(int[] nums) {
+        int a=0,b=nums.length;
+        while(a+1<b){
+            int mid=(a+b)/2;
+            if(nums[mid]==nums[mid+(mid%2==0?-1:1)]){
+                b=mid+(mid%2==0?0:1);
+            }
+            else if(nums[mid]==nums[mid+(mid%2==1?-1:1)]){
+                a=mid+(mid%2==1?0:1);
+            }
+            else
+                return nums[mid];
+        }
+        if(a==0)return nums[a];
+        if(b==nums.length-1) return nums[b];
+        if(nums[a]==nums[a-1]) return b;
+        return a;
+    }
+}

@@ -1,5 +1,7 @@
 import java.util.Arrays;
 public class Solution {
+	//key !! local[i][j]=Math.max(global[i-1][j-1]+nums[j-1], local[i][j-1]+nums[j-1]);
+	// an extension of nomal subarray sum
     /**
      * @param nums: A list of integers
      * @param k: An integer denote to find k non-overlapping subarrays
@@ -12,7 +14,7 @@ public class Solution {
     	int[][] global= new int[k+1][n+1];
     	for(int i=1;i<=k;i++)
     		for(int j=1;j<=n;j++){
-    			if(j<=i) {
+    			if(j<=i) {// just make sure correct data when j==i
                     // if we can have AT MOST k subarrays(elements), then no need this block
     	    		local[i][j]=local[i][j-1]+nums[j-1];// each subarray at leat 1 element!
     	    		global[i][j]=global[i][j-1]+nums[j-1];// each subarray at leat 1 element!

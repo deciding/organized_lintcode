@@ -1,6 +1,7 @@
 package lintcode;
 import java.util.*;
 public class Solution {
+    //sum is 0
     /**
      * @param nums: A list of integers
      * @return: A list of integers includes the index of the first number 

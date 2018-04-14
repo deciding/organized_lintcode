@@ -12,6 +12,7 @@ class Solution {
         // write your code here
         for(int i=0;i<A.length;i++)
         // key !! within the range && either one is correct( otherwise infinte loop)
+	//A[i]!=A[A[i]] special case of duplicate values
         while(A[i]>0&&A[i]<=A.length&&i+1!=A[i]&&A[i]!=A[A[i]-1]){// !! i+1==A[i] loop itself, A[i]==A[A[i]-1] loop between i A[i]
             int tmp=A[i];
             A[i]=A[tmp-1];

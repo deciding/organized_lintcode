@@ -25,7 +25,7 @@ class Solution {
     	for(int i=1;i<k+1;i++)
     		for(int j=2;j<prices.length+1;j++){
     			//Math.max(buy and sell at jth day, only sell at jth day), the second one is the key relationship
-    			local[i][j]=Math.max(global[i-1][j-1], local[i][j-1]+prices[j-1]-prices[j-2]);
+    			local[i][j]=Math.max(global[i-1][j], local[i][j-1]+prices[j-1]-prices[j-2]);
     			//Math.max(not sell at jth day, sell at jth day);
     			global[i][j]=Math.max(global[i][j-1], local[i][j]);
     		}

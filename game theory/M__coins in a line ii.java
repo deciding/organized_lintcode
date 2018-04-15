@@ -1,6 +1,7 @@
 package lintcode;
 import java.util.*;
 public class Solution {
+    // current accumulate val is based on prev two itr
     /**
      * @param values: an array of integers
      * @return: a boolean which equals to true if the first player will win

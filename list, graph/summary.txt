@@ -1,0 +1,14 @@
+dummy, walker, runner: remove, last Nth
+findMid walker/runner
+insertion sort list(always insert first node to sorted), selection sort, merge sort(findMid w/r)
+partition(left,right,left/rightDummy), merge, merge k
+reverse list(4swap), reverse btw mn, reverse half and interleave, is palindrome, rotate(left is naive)
+swap
+
+delete node not at end(copy), remove duplicate 2(nested loop)
+find intersection, linked cycle
+copy random
+
+graph:
+weak connected(UF)
+clone(1st map old-new, 2nd connect)

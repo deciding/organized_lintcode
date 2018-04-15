@@ -1,0 +1,6 @@
+find : cur=cur.left
+queue: lvl order
+recursive: same tree, max depth, balanced(-1), in order arr
+order traverse: iterative, range(in) 
+valid tree: uf
+top sort: bfs, dfs(rev)

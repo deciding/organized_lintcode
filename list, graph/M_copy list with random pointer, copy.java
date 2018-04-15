@@ -1,6 +1,9 @@
 package lintcode;
 import java.util.*;
-
+//idea :1st round mark o_node->number
+//2nd round mark number -> n_node
+//3rd round o_node->n_node for each random field
+//improve: 1. use o_node->n_node, 2. use 1 round
 /**
  * Definition for singly-linked list with a random pointer.
  * class RandomListNode {

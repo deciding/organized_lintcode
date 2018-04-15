@@ -1,5 +1,8 @@
 package lintcode;
 class Solution {
+    //how many trailing 0s in n!
+    //how many number mod 5 + mod 25 +...
+    //since always more mod2 than mod5
     /*
      * param n: As desciption
      * return: An integer, denote the number of trailing zeros in n!

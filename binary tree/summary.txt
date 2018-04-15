@@ -1,6 +1,9 @@
 find : cur=cur.left
-queue: lvl order
-recursive: same tree, max depth, balanced(-1), in order arr
-order traverse: iterative, range(in) 
+queue: lvl order, zigzag(alter stack), serialize/deserialize(save space of null, add null if other child non-null)
+recursive: subtree, balanced(-1), in order arr, invert, max depth, max path sum, LCA(both child return non-null)
+order traverse: iterative, inorder iterator(while null), range(in), 2of3 build tree(must have inorder, use recursion)
+
 valid tree: uf
 top sort: bfs, dfs(rev)
+two run: validate bst(inorder), recover bst with two node swap, bst to list(inorder), sorted list to bbst(not recursive)
+unique bst: catalan number

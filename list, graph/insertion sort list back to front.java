@@ -38,6 +38,6 @@ public class Solution {
     public ListNode insertionSortList(ListNode head) {
         // write your code here
         if(head==null) return head;
-        return insert(head,insertionSortList(head.next));
+        return insert(head,insertionSortList(head.next));// always insert first node to sorted list
     }
 }

@@ -1,0 +1,8 @@
+subsets itr(1<<j)
+subsets dup(sort i==i+1), subsets dup itr(clone all ans and for each add new_elem(1~cnt))
+comb(index), perm(used[]), perm dup(!used[i-1] continue)
+print NDigits with N depth
+add parenthesis(l>0,r>0&&r>l)
+n-queens(traverse on row or col)
+gray code(copy, add MSB, reverse)
+9 cell phone number->str

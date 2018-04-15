@@ -10,10 +10,10 @@
  * }
  */ 
 // len(a)-----len(b)
-//      /          \
-//     /            \
-//     |             \
-//     |              |
+//           /     \
+//         /        \
+//       /           \
+//      /             |
 //     |              /
 //      \             len(c)
 //       \           /
@@ -33,7 +33,7 @@ public class Solution {
         // write your code here
         if(head==null||head.next==null) return null;
         ListNode slow=head;
-        ListNode fast=head.next;
+        ListNode fast=head.next;// just make sure slow!=fast in the first loop
         while(fast!=slow){
             if(slow==null||fast==null||fast.next==null) return null;
             slow=slow.next;

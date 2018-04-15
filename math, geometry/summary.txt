@@ -1,0 +1,20 @@
+permutation index(smaller * factor, +1), permutation index rep, n/p perm, perm seq 
+permutation index rep: preprocess cntMap; loop(i,i+1) (reduce i cnt, first encounter smaller -> reduce j cnt and calc repPerm)
+perm seq(n,k): loop(i,j) m=(k-1)/(n-1)! unused , k%=, fac/=, add last number
+n/p perm: 3421 2find2swap from back
+
+roman -> int, int->roman(9 cases)
+
+points on a line: 1. dup 2. vertical 3. all are dups
+
+from numbers form largest number: sort, just lexical order, string comparator(proof: if xai is larger than aix for all ai, use x as first)
+remove k digits to form smallest number: one by one, remove first i>i+1(Proof: higher digits change influence more), trailing 0
+
+fast power a^n%b
+divide: isNeg, a-b<<shift
+
+numbers with factor only 2 3 5: share same arr with 3 diff indices compete, generator
+
+digits k cnt in 1~n: low cur high bits, special case k==0&&high==0&&!fac=1
+
+int->bin, double->bin

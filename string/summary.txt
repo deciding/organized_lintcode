@@ -1,0 +1,7 @@
+is palindrome, palindorme partition, longest palindromic substr(even,odd), no rep char, two are anagram, all anagrams(impl hash), simplify unix path(/+)
+longest substr wo rep(window)
+longest common subsequence(dp3), 2string interleave 3rd(dp2), word break(tf, 1d dp), is palindrome preproc matrix(diff direction, dp1, init), palindrome least cut(1d dp), longest palindromic subseq(diff direction, dp3, init) distinct subseq(rabbbit, dp2, local), edit distance(dp3, init)
+kmp(i,j)
+trie dict(hashmap, isword), trie with regexp dot
+word search in grid(floodfill, change char instead of visited), word search for dict(use trie)
+word ladder(shortest path, bfs, queue with size loop)

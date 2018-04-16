@@ -1,4 +1,6 @@
 public class Solution {
+    //all shortest paths
+    //1. use BFS get all levels d with d<=d_shortest 2. use the info to DFS
     /**
       * @param start, a string
       * @param end, a string

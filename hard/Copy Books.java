@@ -1,4 +1,5 @@
 public class Solution {
+    //minimax k subarr sum
     /**
      * @param pages: an array of integers
      * @param k: an integer

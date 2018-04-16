@@ -1,4 +1,5 @@
 public class Solution {
+    //2 cases for *, to match or not(+ is more complex)
     /**
      * @param s: A string 
      * @param p: A string includes "?" and "*"

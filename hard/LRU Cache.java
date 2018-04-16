@@ -1,4 +1,6 @@
 public class Solution {
+    //HashMap -> get set
+    //Double linked list -> pop(i)
     class ListNode{
         int key;
         int val;

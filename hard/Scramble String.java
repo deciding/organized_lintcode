@@ -1,4 +1,5 @@
 public class Solution {
+    //word-> tree, swap, check is scramble string of s1
     /**
      * @param s1 A string
      * @param s2 Another string

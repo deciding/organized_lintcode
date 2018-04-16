@@ -1,4 +1,6 @@
 public class Solution {
+    // range i, j. No longer steps as dimension
+    // like palindrome
     /**
      * @param nums a list of integer
      * @return an integer, maximum coins

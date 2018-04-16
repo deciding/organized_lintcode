@@ -1,4 +1,6 @@
 class Solution {
+    //create bin for range, not a single value, then there won't be too mucn bins
+    //each bin we just need to find max/min, no need sort them
     /**
      * @param nums: an array of integers
      * @return: the maximum difference

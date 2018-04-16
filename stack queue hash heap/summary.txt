@@ -1,0 +1,5 @@
+hash:1.overflow, add 1 %size 2. neg val: (val%size+size)%size
+2stack->queue, 2queue->stack
+min stack
+heap: percolate up(delete)/down(insert)
+RPN->normal(stack),normal->RPN(shunting)

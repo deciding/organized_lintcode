@@ -1,4 +1,6 @@
 class Solution {
+    //bs for k
+    //k/2 can be eliminated for each iteration, 2 cases: whether one of the arr has >=k/2 elems
     /**
      * @param A: An integer array.
      * @param B: An integer array.

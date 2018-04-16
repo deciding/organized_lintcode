@@ -1,5 +1,6 @@
 public class Solution {
     //minimax k subarr sum
+    //window
     /**
      * @param pages: an array of integers
      * @param k: an integer

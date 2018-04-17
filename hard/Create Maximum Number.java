@@ -1,4 +1,7 @@
 public class Solution {
+    //1. get the k1, k2 subarr with for loop
+    //2. get the greatest of length k1/k2
+    //3. merge with lexical order comes first(better lexical order, better larger chance, also resolve die)
     /**
      * @param nums1 an integer array of length m with digits 0-9
      * @param nums2 an integer array of length n with digits 0-9

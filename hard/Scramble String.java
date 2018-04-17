@@ -1,5 +1,6 @@
 public class Solution {
     //word-> tree, swap, check is scramble string of s1
+    //mem s1_start*s2_start*length
     /**
      * @param s1 A string
      * @param s2 Another string

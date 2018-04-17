@@ -7,6 +7,7 @@
  * }
  */
 public class Solution {
+    //reverse recursively, reserve prev, cur, head
     /**
      * @param head a ListNode
      * @param k an integer

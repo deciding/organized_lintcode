@@ -1,5 +1,6 @@
 public class Solution {
     // n houses, k colors, n*k cost, no two adj same color, min cost
+    // mem n*k, left/right min 
     /**
      * @param costs n x k cost matrix
      * @return an integer, the minimum cost to paint all houses

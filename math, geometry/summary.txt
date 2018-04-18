@@ -13,7 +13,7 @@ remove k digits to form smallest number: one by one, remove first i>i+1(Proof: h
 fast power a^n%b
 divide: isNeg, a-b<<shift
 
-numbers with factor only 2 3 5: share same arr with 3 diff indices compete, generator
+ugly numbers with factor only 2 3 5: share same arr with 3 diff indices compete, generator; ugly numbers with k primes(remember update index for all with correct ans)
 
 digits k cnt in 1~n: low cur high bits, special case k==0&&high==0&&!fac=1
 

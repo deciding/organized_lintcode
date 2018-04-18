@@ -1,0 +1,18 @@
+paint fence: 2 cases
+paint house: 3 colors, n*3; k colors, n*k, left right min 
+robber ii circle(search 2 run), robber iii tree(use global, 4 mem ll/lr/rl/rr)
+trapping rain: proof, visited, pq start from lowest surround, adj if smaller will get the h, assign new height, offer all adj
+patching arr: proof, if num smaller than miss, miss + num will get new miss
+move 0s to end: partition, no need swap, assign 0s at last
+top k: k heap
+zigzag iterator: i,j compare, if finished one arr, assign max to i/j
+intersection of two arr: sort, merge
+top k freq: kheap+map with val,key order
+top k freq: no stream-> kheap+hashmap, stream(add()+topk()) -> double list + hashmap, freq node contains keys(linkedhashset) | treemap(keyset is also orderedset, iterator)
+linkedhashset as LRU:add remove iterator.next
+LinkedHashSet use LinkedHashMap implemented by hashmap+double linked list
+bomb enemy: W E 0, 4 accumulate matrix
+bloom filter: multiple hash func, bits arr save tf/count
+combination sum iv: num[] can be repeated, thus it cannot form a state
+find the missing number ii: all numbers in str, dp not going to be useful, although we get non-tree graph, we need exact graph, not just a value of some state
+expression expansion 3[2[ad]3[pf]]xyz: stack, ] pop, number accumulate, reverse, stringbuilder

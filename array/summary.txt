@@ -5,7 +5,7 @@ left right: max subarr diff(acc max sum), max 2 subarr sum, max 2 stock trans, p
 majority: 1/2, 1/3, 1/n
 matrix: rotate(one less line), zigzag(m+n,m), spiral(x1>x2,y1>y2), c/r sorted search/kth(heap), margin O, set 0(in-place), max square(dp3), max rect(shunting)
 max/min: min adjust cost(val has range, dp), smallest diff btw arr(sort, eliminate), max product(neg), max 2 sum, max 2 diff, max n subarr sum, longest consec number(hashset, remove), LIS(dp, or bs+replace)
-sum: 2 sum(hash), 3 sum(2 side), 4 sum, k sum(3d dp),  combination sum(dup), subarr sum(hash), subarr sum closest(sort), submatrix sum(3 loop)
+sum: 2 sum(hash), 3 sum(2 side), 4 sum, k sum(3d dp),  combination sum(dup), repickable combination sum(dp), subarr sum(hash), subarr sum closest(sort), submatrix sum(3 loop)
 rotate: reverse, bs in rotate(dup), min in rotate(dup)
 single number: 2n+1, 3n+1, 2n+2, 2n+1(2n next to each other), missing 1~n
 sort, search: partition{quick select/sort, interleave, k colors, nuts and bolts}, merge{inplace(from back), reverse pair num}, bs{first occur, last occur, range occur, insert pos, rotated, matrix, wood cut, peak value}

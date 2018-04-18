@@ -12,3 +12,4 @@ sort, search: partition{quick select/sort, interleave, k colors, nuts and bolts}
 stock: 1 trans, inf trans, 2 trans, k trans
 window: subarr min size sum >k, substr max wo repeat, substr min contain all char in target
 wiggle sort
+paint: fence(2 cases), paint house(n*3), paint house k(n*k, left/right min)

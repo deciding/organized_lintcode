@@ -32,7 +32,7 @@ top k: k heap
 zigzag iterator: i,j compare, if finished one arr, assign max to i/j
 intersection of two arr: sort, merge
 top k freq: kheap+map with val,key order
-top k freq: no stream-> kheap+hashmap, stream(add()+topk()) -> double list + hashmap, freq node contains keys(linkedhashset) | treemap(keyset is also orderedset, iterator)
+top k freq: no stream-> kheap+hashmap, stream(add()+topk()) -> double list + hashmap, freq node contains keys(linkedhashset) | treeset with cmp refer to hashmap (this form a value treemap) | not treemap(keyset is also orderedset, iterator)
 linkedhashset as LRU:add remove iterator.next
 LinkedHashSet use LinkedHashMap implemented by hashmap+double linked list
 bomb enemy: W E 0, 4 accumulate matrix

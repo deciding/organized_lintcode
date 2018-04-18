@@ -21,3 +21,27 @@ merge k sorted arr: 1. binary merge 2. heap with all first elem inserted first
 wiggle sort <=: just swap(easy actually), wiggle sort ii <: partition and find median(use absolute index), reverse arr(two pointer)
 decodes way of int to ascii: if only need limited prev, no need arr. 4 cases 1.>2 0, return, 2. 0 cur=pp, 3. 1,2 <7 cur=p+pp, 4. cur=p
 perfect squares: n*k but mem[n], with pruned k. xxxxx should think as 1d mem, but exaust all the square cases
+
+paint fence: 2 cases
+paint house: 3 colors, n*3; k colors, n*k, left right min 
+robber ii circle(search 2 run), robber iii tree(use global, 4 mem ll/lr/rl/rr)
+trapping rain: proof, visited, pq start from lowest surround, adj if smaller will get the h, assign new height, offer all adj
+patching arr: proof, if num smaller than miss, miss + num will get new miss
+move 0s to end: partition, no need swap, assign 0s at last
+top k: k heap
+zigzag iterator: i,j compare, if finished one arr, assign max to i/j
+intersection of two arr: sort, merge
+top k freq: kheap+map with val,key order
+top k freq: no stream-> kheap+hashmap, stream(add()+topk()) -> double list + hashmap, freq node contains keys(linkedhashset) | treemap(keyset is also orderedset, iterator)
+linkedhashset as LRU:add remove iterator.next
+LinkedHashSet use LinkedHashMap implemented by hashmap+double linked list
+bomb enemy: W E 0, 4 accumulate matrix
+bloom filter: multiple hash func, bits arr save tf/count
+combination sum iv: num[] can be repeated, thus it cannot form a state
+find the missing number ii: all numbers in str, dp not going to be useful, although we get non-tree graph, we need exact graph, not just a value of some state(but suffix may recompute, can separate by space and hash)
+expression expansion 3[2[ad]3[pf]]xyz: stack, ] pop, number accumulate, reverse, stringbuilder
+merge k sorted interval: 1. d&c, 2. heap https://www.jiuzhang.com/solution/merge-k-sorted-interval-lists/
+merge intervals: keep start and end, read next 1. if i.start<=end, update end 2. else add (start,end), update start,end
+word break ii, print but critical time limit: http://www.cnblogs.com/yuzhangcmu/p/4037299.html(suffix may recompute, can separate by space and hash, also can use boolean[] canbreak, but same as judge hashed string size)(also can precalculate canbreak boolean arr)
+partition equal subset sum: since we know total sum <=60000, we can use dp on sum/2*n
+strstrii: kmp

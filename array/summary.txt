@@ -1,4 +1,4 @@
-dp greedy: path with block(0), robber, decode ways, climbing stairs, fib, jump(range), rect line trapped(eliminate), rect in histogram(shunting), total rect hist trapped(left right), backpack(size), candy, gas station(total)
+dp greedy: path with block(0), robber, robber ii circle(2 run), robber iii tree(from leaf, use gloabl with only 4 mem), decode ways, climbing stairs, fib, jump(range), rect line trapped(eliminate), rect in histogram(shunting), total rect hist trapped(left right), backpack(size), candy, gas station(total)
 in-place:space replacement(from back), remove from sorted i/ii, first missing pos(A[i]!=A[A[i]])
 interval: merge, airplane(parenthesis)
 left right: max subarr diff(acc max sum), max 2 subarr sum, max 2 stock trans, product exclude itself, hist trap(max), candy

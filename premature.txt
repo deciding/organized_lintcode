@@ -1,0 +1,23 @@
+LFU http://bookshadow.com/weblog/2016/11/22/leetcode-lfu-cache/ valueMap, nodeMap, double linked increasing freq node, linkedhashset keys with same freq
+LRU nodeMap, double linked value node
+catalan number: 2nCn/(n+1) C: 1*n/2*(n-1)/3....
+Tower of Hanoi: odd even, format {} ABC, recursion, reverse
+anagrams: calc hash of string
+first unique char in string: hashmap -> charArr
+segment tree, fenwick tree? 4n?
+clone binary tree, binary tree sum -> path, bst -> double list
+reorder arr -> largest number: prove as bubble sort
+Triangle Count: how many combination of arr can form triangle, 3sum
+Longest Substring with At Most K Distinct Characters: window
+maximum gap: bin
+priorityqueue(initsize,comparator)
+generate parenthesis: just care about the l r diff
+number of islands ii: new land cell as stream, use UF
+**O(logn) bst successor: https://www.jiuzhang.com/solution/inorder-successor-in-bst/, set successor as root when go left until val found;right null-> successor;right nonnull, right->left...end
+listnode swap pairs: recursion
+find k closest elem in sorted arr: last smaller bs + left/right pointer
+find k most freq word in arr: hashmap node, pq node with size k. another way https://www.geeksforgeeks.org/find-the-k-most-frequent-words-from-a-file/
+merge k sorted arr: 1. binary merge 2. heap with all first elem inserted first
+wiggle sort <=: just swap(easy actually), wiggle sort ii <: partition and find median(use absolute index), reverse arr(two pointer)
+decodes way of int to ascii: if only need limited prev, no need arr. 4 cases 1.>2 0, return, 2. 0 cur=pp, 3. 1,2 <7 cur=p+pp, 4. cur=p
+perfect squares: n*k but mem[n], with pruned k. xxxxx should think as 1d mem, but exaust all the square cases

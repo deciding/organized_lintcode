@@ -45,3 +45,5 @@ merge intervals: keep start and end, read next 1. if i.start<=end, update end 2.
 word break ii, print but critical time limit: http://www.cnblogs.com/yuzhangcmu/p/4037299.html(suffix may recompute, can separate by space and hash, also can use boolean[] canbreak, but same as judge hashed string size)(also can precalculate canbreak boolean arr)
 partition equal subset sum: since we know total sum <=60000, we can use dp on sum/2*n
 strstrii: kmp
+Smallest Rectangle Enclosing Black Pixels: we already know one pixel in black area, no need dfs to find bound, just use bs + range check (bs+bs will not work, since after mid, you may not in the black area)
+bs can be used for 1111000000 pattern(not 011110000)

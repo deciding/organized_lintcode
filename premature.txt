@@ -47,3 +47,7 @@ partition equal subset sum: since we know total sum <=60000, we can use dp on su
 strstrii: kmp
 Smallest Rectangle Enclosing Black Pixels: we already know one pixel in black area, no need dfs to find bound, just use bs + range check (bs+bs will not work, since after mid, you may not in the black area)
 bs can be used for 1111000000 pattern(not 011110000)
+russian doll: sort->LIS, if same width cannot nested, reverse height order of same width
+chuanzhitiao: 3 dim,same phase, weight deduction, 4->3 dim
+1100010011011: remove adjacent(zuma), 2times, 3times
+non overlap AB BA coexist(two side)

@@ -28,10 +28,10 @@ robber ii circle(search 2 run), robber iii tree(use global, 4 mem ll/lr/rl/rr)
 trapping rain: proof, visited, pq start from lowest surround, adj if smaller will get the h, assign new height, offer all adj
 patching arr: proof, if num smaller than miss, miss + num will get new miss
 move 0s to end: partition, no need swap, assign 0s at last
-top k: k heap
+top k: k heap, quick select(partition)
 zigzag iterator: i,j compare, if finished one arr, assign max to i/j
 intersection of two arr: sort, merge
-top k freq: kheap+map with val,key order
+top k freq: kheap+map with (val,key) order
 top k freq: no stream-> kheap+hashmap, stream(add()+topk()) -> double list + hashmap, freq node contains keys(linkedhashset) | treeset with cmp refer to hashmap (this form a value treemap) | not treemap(keyset is also orderedset, iterator)
 linkedhashset as LRU:add remove iterator.next
 LinkedHashSet use LinkedHashMap implemented by hashmap+double linked list
@@ -51,3 +51,10 @@ russian doll: sort->LIS, if same width cannot nested, reverse height order of sa
 chuanzhitiao: 3 dim,same phase, weight deduction, 4->3 dim
 1100010011011: remove adjacent(zuma), 2times, 3times
 non overlap AB BA coexist(two side)
+Largest Divisible Subset: max len, max len prev ind, max all len ind :https://www.geeksforgeeks.org/largest-divisible-subset-array/
+sequence reconstruction: 1. adjmat(careful dup edge), indegree decrease 2. edge no violate, edge contains all http://www.cnblogs.com/grandyang/p/6032498.html
+Two Sum III - Data structure design: O(1) add, O(n) find, careful repeat val
+Binary Tree Longest Consecutive Sequence II: global,left,right: http://www.cnblogs.com/grandyang/p/6864398.html method1
+course schedule: test cycle: indegree(queue 0 indegree)/(revertvisited+conflict) http://www.cnblogs.com/grandyang/p/4484571.html
+course schedule ii : use indegree and record 
+Maximum Average Subarray II： cannot think of O(N), use bs, max~min, use (accumulate sum - k*est mean) , record lowest acc sum, once (acc_sum_mean_diff>lowest_sum_mean_diff) we checked est_mean<=ans https://www.jiuzhang.com/solutions/maximum-average-subarray/

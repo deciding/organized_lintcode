@@ -58,3 +58,8 @@ Binary Tree Longest Consecutive Sequence II: global,left,right: http://www.cnblo
 course schedule: test cycle: indegree(queue 0 indegree)/(revertvisited+conflict) http://www.cnblogs.com/grandyang/p/4484571.html
 course schedule ii : use indegree and record 
 Maximum Average Subarray II： cannot think of O(N), use bs, max~min, use (accumulate sum - k*est mean) , record lowest acc sum, once (acc_sum_mean_diff>lowest_sum_mean_diff) we checked est_mean<=ans https://www.jiuzhang.com/solutions/maximum-average-subarray/
+Maximum Subarray V: [1,-1,2,-1,1,-1,-1,-1,5], 3,7 use old O(N) method will not work. use ordered deque(used for limited min) https://github.com/jiadaizhao/LintCode/blob/master/0621-Maximum%20Subarray%20V/0621-Maximum%20Subarray%20V.cpp
+frog jump: brute force+bs, dp(n*step)+reverse n map, dp improve: unorderedmap*unorderedset + forward btmup https://github.com/jiadaizhao/LintCode/blob/master/0622-Frog%20Jump/0622-Frog%20Jump.cpp
+find missing pos without extra space: A[i]!=i+1, A[i]>=1 <=n, A[i]!=A[A[i]-1]
+find duplicate: 1~n, but n+1 slots, A[0] will not be pointed, there must be a cycle with one node that with 2 parent, slow/fast
+word square: way to check: 1.noraml: for every word, m[i][j] check m[j][i]; 2.hashmap: we get i length prefix from vertical, use map to get corresponding words and fill the row(we can fill the matrix to remain only a smaller square every time, and every time fill the colum, we can check the i+1~n rows about the prefix); 3.trie contains all words with cur prefix: we get i length prefix from vertical, use map to get corresponding words and fill the row http://www.cnblogs.com/grandyang/p/6006000.html

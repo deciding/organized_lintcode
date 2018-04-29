@@ -1,0 +1,2 @@
+coins in a line 1: since we want to decide we should play first or second, the dp array both represent player1 and 2, thus we do not need minimax, which only have mem record one player
+coins in a line 2: since it is a "zero sum" game, the other player will always want player one to get less, thus we can just use one mem for recording player one's decision, and use minimax to mock player two's decision

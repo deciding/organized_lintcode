@@ -61,5 +61,27 @@ Maximum Average Subarray II： cannot think of O(N), use bs, max~min, use (accum
 Maximum Subarray V: [1,-1,2,-1,1,-1,-1,-1,5], 3,7 use old O(N) method will not work. use ordered deque(used for limited min) https://github.com/jiadaizhao/LintCode/blob/master/0621-Maximum%20Subarray%20V/0621-Maximum%20Subarray%20V.cpp
 frog jump: brute force+bs, dp(n*step)+reverse n map, dp improve: unorderedmap*unorderedset + forward btmup https://github.com/jiadaizhao/LintCode/blob/master/0622-Frog%20Jump/0622-Frog%20Jump.cpp
 find missing pos without extra space: A[i]!=i+1, A[i]>=1 <=n, A[i]!=A[A[i]-1]
-find duplicate: 1~n, but n+1 slots, A[0] will not be pointed, there must be a cycle with one node that with 2 parent, slow/fast
+find duplicate: 1~n, but n+1 slots, A[0] will not be pointed, there must be a cycle with one node that with 2 parent, slow/fast (can also use A[i]!=A[A[i]-1] to check)
 word square: way to check: 1.noraml: for every word, m[i][j] check m[j][i]; 2.hashmap: we get i length prefix from vertical, use map to get corresponding words and fill the row(we can fill the matrix to remain only a smaller square every time, and every time fill the colum, we can check the i+1~n rows about the prefix); 3.trie contains all words with cur prefix: we get i length prefix from vertical, use map to get corresponding words and fill the row http://www.cnblogs.com/grandyang/p/6006000.html
+132 pattern: forward order, we need to see whether 2 is in 1,3 range, backward order, we just need to check 1<2. use stack to record, and pop all 2s and find the largest 2. https://github.com/jiadaizhao/LintCode/blob/master/0636-132%20Pattern/0636-132%20Pattern.cpp
+string abreviation w2d, string homorphism
+word abbreviation: w2d, wo1d is not good, int3l is conflict. loop through the word and add abbr; if dup, increase prefix by 1(we can use trie actually, use w2d as key to store tries and go through the word)https://github.com/jiadaizhao/LintCode/blob/master/0639-Word%20Abbreviation/0639-Word%20Abbreviation.cpp
+one edit distance: 3 cases
+system longest file path: longest file path str length: use map(depth->len), use \t get depth, if file record max, if dir, put map(can use stack, keep cur depth, stack of len, and check file)
+tree vertical order: map(root offset->val), doubly linked list is better than treemap
+Expression Add Operators: +-* a string get target, be careful about multiple operator(DP can be used for pruning)
+Sparse Matrix Multiplication: 1st record cols non-zero index, 2nd, A[i][j]!=0-> res[i][k]+=A[i][j]*B[j][k] k is from cols
+bigint sum, mul: mul: product[m+n], p1=i+j, p2=i+j+1
+Insert Delete GetRandom O(1): since we access randomly, we no longer need the array order: map(val->index), arr, every time delete, we pop arr, remove target in map, change arr[map[target]] to poped val, change map[val] to map[target]
+Convert BST to Greater Tree: node->sum of gte numbers: right first inorder, sum
+Walls and Gates: 0 gate, -1 wall, INF empty, find 0 and bfs, all 0s can go at the same time
+Counting Bits:Given num = 5 you should return [0,1,1,2,1,2], dp[i] = dp[i & (i - 1)] + 1; 2 cases: get carry/ no carry
+Range Sum Query 2D - Immutable: sum[x2,y2]-sum[x1,y2]-sum[x2,y1]+sum[x1,y2]
+Guess Number Higher or Lower II: game theory minimax, although not zero sum, but we assume someone will always let us lose more. we want minimax k in [i,j], the dp traverse order is i:2~n, j:i-1~1, it's still "7" shaped dp
+Longest Palindromic Subsequence: need 3 direction, lpsubstr need only 1 direction
+Ones and Zeroes: backpack with m*n *num, be careful go from largest
+Coin Change: since coins are repeatable, it is not a state, only total amount is state
+Predict the Winner: game theory, take the coin from either end. since we know can only take one coin a time, we can just record n, n-2, n-4... cases. and case can be different for n is odd/even. len * range start as first method, i*j as second method, both need 2 loop.
+Rotate Words: check unique in dict. method1: record all rotate for each word, +1 when encounter new. method2: only record lowest permutation
+Decode Ways II: 1~26, *=1~9, make sure think of all cases, *n,n*,**
+Number of Big Islands: bigger islands, bfs is better to count, dfs also can, just add up when traceback

@@ -85,3 +85,18 @@ Predict the Winner: game theory, take the coin from either end. since we know ca
 Rotate Words: check unique in dict. method1: record all rotate for each word, +1 when encounter new. method2: only record lowest permutation
 Decode Ways II: 1~26, *=1~9, make sure think of all cases, *n,n*,**
 Number of Big Islands: bigger islands, bfs is better to count, dfs also can, just add up when traceback
+KMP: next[] is longest-same-suffix-prefix(true subset) LENGTH(thus already +1) right shift 1 and prepend -1(when searching, i++;j++ will make it 0). to get next[], use dp and recursion next[j+1]=next[j]+1, or j=next[j] until j=-1(i++;j++ will make it 0 length)
+Shortest Palindrome: shortest prepends, str+"*"+rev, use kmp
+Unique Paths III: unique VALUE paths, use dp with set, since set will be empty by default, it's not useful to use n+1 dp size. we can initialize first row and first col.
+First Missing Prime Number: all numbers are prime, next prime generator: while !isPrime +=2
+Word Break III: given str and dict, find ways to form sentences, 1d dp, can first find the longest length of the dict words
+First Unique Number In Stream: LinkedList(Doubly Deque)+HashSet(Integer in LinkedList), if already in HashSet, remove in LinkedList,else append to LinkedList and add to HashSet
+The Number In Words: number->natrual language word, below_20,below_100,hundred,thousand,million,billion(no need plural)
+Two Sum IV - Input is a BST: inorder+hashset
+Factorial: bigint mul(i+j,i+j+1, backward)+dp
+Recover Binary Search Tree: inorder
+Sliding Window Unique Elements Sum: the sum of the count of unique numbers in all windows, since treat count 0,1 as same, when adding new number, we should make uniqueNum++ when count is 1 or 2!
+Course Schedule III: TSP O(2^n); sort by deadline, assume we have i courses with most number(mathematical induction), adding 1 and make its time shortest(max heap), this is greedy
+Maximum Distance in Arrays: (mathematical induction) collect prevMin,prevMax and prevMaxDiff
+Check Sum of K Primes: Goldbach https://www.geeksforgeeks.org/check-number-can-written-sum-k-prime-numbers/
+Cutting a Rod: rod with price for each lengtheither dp[i] = max(dp[i], dp[j] + dp[i - j]); or dp[i] = max(dp[i], dp[j] + prices[i - j - 1]); is ok
